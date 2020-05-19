@@ -1,0 +1,34 @@
+.burger {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50%;
+    border: 2px solid black;
+    transition: .3s linear;
+}
+
+.burger:hover {
+    cursor: pointer;
+    transform: rotate(45deg);
+}
+
+aside {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    background-color: #000;
+    transition: 1s linear;
+}
+
+.burger:hover+aside {
+    left: 0px;
+}
